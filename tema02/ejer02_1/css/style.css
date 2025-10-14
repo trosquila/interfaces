@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(216, 216, 216);
+    margin: 0;
+}
+h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    margin: 20px 0 0 0;
+}
+header{
+    background-color: white;
+    color: rgb(0, 130, 216);
+    height: 40px;
+    margin: 0;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-size: 10pt;
+    color: rgb(158, 158, 158);
+    margin-top: 40px;
+}
+#container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: anchor-center;
+
+}
+#container > article{
+    background-color: white;
+    margin-top: 20px;
+    width: 5    0%;
+    box-sizing:border-box; 
+    padding: 20px;
+    
+}
+.post-head small{
+    margin-top: 10px;
+    color: rgb(0, 183, 255);
+}
+.post-head{
+    border-bottom: 3px solid rgb(0, 183, 255);
+    padding: 10px 0 ;
+}
+.post-foot{
+    font-size: 10pt;
+    color: rgb(158, 158, 158);
+}

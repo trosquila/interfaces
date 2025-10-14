@@ -1,0 +1,59 @@
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#header ul li{
+    float: inline-end;
+    list-style-type: none;
+    margin-right:10px;
+    color: rgb(197, 197, 197);
+}
+#header ul li a{
+    color: rgb(197, 197, 197);
+}
+a{
+    text-decoration: none;
+}
+#container{
+    margin: 20% auto;
+    max-width: 500px;
+    text-align: center;
+    
+}
+#logo{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+form input[type="text"] {
+    border-radius: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    height: 25px;
+    width:  100%;
+    float: left;
+    position: relative;
+}
+form input[type="submit"] {
+    text-align: center;
+    margin-top: 35px;
+    border: none;
+    padding: 10px;
+}
+
+.clearfix ul li{
+    float: inline-end;
+    list-style-type: none;
+    margin-right:10px;
+
+    
+}
+.clearfix ul li >a{
+        color: rgb(197, 197, 197);
+}
+.clearfix{
+    background-color:rgb(156, 156, 156);
+    width: 100%;
+    overflow: auto;
+}
