@@ -73,31 +73,75 @@ body{
     justify-content: space-around;
     text-align: center;
     color: white;
+    position: relative;
     
 }
-.apartadoMenu3{
+.menu3Inicio, .menu3Contacto, .menu3Tienda, .menuAsistencia{
     flex: 1;
     padding: 10px;
     text-align: center;
+    position: relative;
 }
-.apartadoMenu3:hover{
+.subMenuContacto,
+.subMenuTienda {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(100, 100, 255);
+    width: 100%;
+}
+
+.menu3Inicio:hover, .menu3Contacto:hover, .menu3Tienda:hover, .menuAsistencia:hover{
     background-color: rgb(45, 45, 150);
 }
-.submenuInicio{
-    display: none;
-}
-.apartadoMenu3:hover .submenuInicio{
+.menu3Contacto:hover .subMenuContacto{
     display: block;
 }
-.submenuInicio > p:hover{
-    background-color: rgb(120, 120, 226);
+.menu3Tienda:hover .subMenuTienda {
+    display: block;
 }
-.menu3Contacto{
-    
+.subMenuContacto{
+    display: none;
 }
-.menu3Tienda{
-    
+.subMenuTienda{
+    display: none;
 }
-.menuAsistencia{
-    
+.subMenuContacto > ul, .subMenuTienda > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.subMenuContacto > ul > li, .subMenuTienda > ul > li{
+    padding: 5px;
+}
+.subMenuContacto > ul > li:hover, .subMenuTienda > ul > li:hover{
+    background-color: rgb(233, 56, 43);
+}
+@media (max-width: 768px){
+    .menu3{
+        flex-direction: column;
+    }
+    .subMenuContacto,
+    .subMenuTienda {
+        display: block;
+        position: relative;
+    }
+    .menu3Contacto, .menu3Tienda{
+        padding: 0;
+    }
+
+}
+/* MENÚ 4 */
+.menu4{
+    display: flex;
+    background-color: rgb(120, 120, 255);
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+    color: white;
+}
+.tamanoLogo{
+    font-size: 20pt;
+    padding: 10px 0 10px 0;
 }
