@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(88, 88, 204);
+}
+.contenedor{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+.ajustarContenido{
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.comentarioPrincipal{
+    padding: 10px;
+    border-radius: 20px;
+}
+.comentarioSecundario{
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+    border-radius: 20px;
+    width: 85%;
+    margin-top: 20px    ;
+}
+.datosComentario{
+    display: flex;
+    gap: 10px;
+}
+img{
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    align-self: center;
+}
