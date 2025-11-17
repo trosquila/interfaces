@@ -19,7 +19,7 @@ h2{
 form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -27,11 +27,24 @@ form{
     display: flex;
     justify-content:space-between;
 }
-
-input[type="text"], input[type="date"], select{
-    width: 210px;
+label{
+    margin-bottom: 10px;
 }
-
+input[type="text"], input[type="date"], select{
+    width: 250px;
+}
+input[type="text"]:focus, input[type="date"]:focus, select:focus, textarea:focus{
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+}
+input[type="text"], input[type="date"], select, textarea{
+    border: 1px solid rgb(224, 224, 224);
+    min-height: 30px;
+    border-radius: 5px;
+}
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+}
 .contenidoInput{
     display: flex;
     flex-direction: column;
@@ -43,4 +56,59 @@ input[type="text"], input[type="date"], select{
 
 .contenedorCondiciones{
     display: flex;
+}
+input[type="submit"]{
+    background-color: rgb(99, 224, 99);
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+input[type="checkbox"]:checked{
+    accent-color: rgb(95, 180, 95);
+
+}
+
+input[type="checkbox"]:checked::after{
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(95, 180, 95);
+}
+input[type="submit"]:active{
+    background-color: rgb(150, 235, 150);
+}
+@media (max-width: 1680px) {
+    section{
+        width: 40%;
+    }
+}
+@media (max-width: 1480px) {
+    section{
+        width: 50%;
+    }
+}
+@media (max-width: 1120px) {
+    section{
+        width: 60%;
+    }
+}
+@media (max-width: 950px) {
+    section{
+        width: 65%;
+    }
+}
+@media (max-width: 901px) {
+    .contenedorDatosDoble{
+        flex-direction: column;
+    }
+    input[type="text"], input[type="date"], select{
+        width: 100%;
+    }
+    .contenedorDatosDoble{
+        gap: 20px;
+    }
 }

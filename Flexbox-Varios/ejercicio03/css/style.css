@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    display: flex;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(70, 67, 67);
+    color: white;
+    padding: 20px 6%;
+}
+.datosPersonales{
+    flex: 1;
+    align-content: center;
+    width: 60%;
+}
+img{
+    height: 100vh;
+}
+.contenedoBtn{
+    margin-top: 20px;
+}
+.contenedoBtn > input{
+    background-color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}

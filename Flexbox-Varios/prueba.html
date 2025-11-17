@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(171, 219, 143);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+#checkbox {
+    display: none;
+}
+.btnMenu {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    display: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: green;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+#checkbox:checked~.menu {
+    max-height: 500px;
+}
+.apartadoMenu {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.apartadoMenu:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+}
+@media (max-width: 600px) {
+    .btnMenu {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 601px) {
+    .menu {
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        max-height: none;
+        overflow: visible;
+    }
+
+    #checkbox {
+        display: none;
+    }
+
+    .btnMenu {
+        display: none;
+    }
+}

@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(171, 219, 143);
+    width: 100%;
+    height: 70px;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+.apartadoMenu{
+    flex: 1;
+    padding: 10px;
+}
+.apartadoMenu:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.btnMenu {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btnMenu i{
+    display: none;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+.btnMenu input:checked + i::after {
+    font-size: 16px;
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+#checkbox:checked ~ .menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgb(113, 143, 96);
+}
+@media (max-width: 600px){
+    .btnMenu i{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        padding-left: 20px;
+    }
+}
