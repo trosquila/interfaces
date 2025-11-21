@@ -1,25 +1,37 @@
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
-section{
+
+section {
     display: flex;
+    height: 100vh; 
 }
-.contenido{
+
+img {
+    width: 40%;  
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.contenido {
     display: flex;
+    height: 100vh;
+    margin-left: 40%;
     flex-direction: column;
     background-color: rgb(70, 67, 67);
     color: white;
-    padding: 20px 6%;
+    padding: 20px 40px;
+    align-items: flex-end;
+    z-index: 1000;
 }
-.datosPersonales{
-    flex: 1;
-    align-content: center;
-    width: 60%;
-}
-img{
-    height: 100vh;
-}
+
 .contenedoBtn{
     margin-top: 20px;
 }
@@ -29,8 +41,38 @@ img{
     padding: 10px 16px;
     border-radius: 4px;
 }
+.contenedoBtn > input:active{
+    background-color: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
+}
+.textPeque{
+    width: 80%;
+    line-height: 1.5;
+}
+.datosPersonales{
+    flex: 1;
+    align-content: center;
+}
 .redes{
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    gap: 20px;
+    font-size: 16pt;
+}
+@media (max-width: 550px) {
+    section {
+        flex-direction: column;
+    }
+    img {
+        height: 30vh;
+        position: relative;
+        width: 100%;
+        
+    }
+    .contenido {
+        margin-left: unset;
+        flex-direction: column;
+        padding: 20px 0 0 40px;
+        height: 70vh;
+    }
+    
 }
