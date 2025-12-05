@@ -52,10 +52,27 @@ button:active{
     section{
         grid-template-columns: repeat(2, 1fr);
     }
+    img {
+        height: 280px;
+    }
+    .tarjeta {
+        height: 50vh;
+    }  
+}
+@media (max-width: 740px){
+    img {
+            height: 235px;
+    }
 }
 
 @media (max-width: 550px){
     section{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 470px){
+    img {
+            height: 285px;
     }
 }
