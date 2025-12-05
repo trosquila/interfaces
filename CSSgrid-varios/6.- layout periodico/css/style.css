@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}  
+section{
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+}
+.colorBloque{
+background-color: rgb(238, 238, 139);
+padding: 20px;
+}
+.ACSup {
+    grid-column: 1/7 ;
+    grid-row: 1/4;
+}
+
+.AC1Sup {
+    grid-column: 7/10;
+    grid-row: 1 ;
+}
+
+.AC2Sup {
+    grid-column: 7/10;
+    grid-row: 2 ;
+}
+
+.AC3Sup {
+    grid-column: 7/10;
+    grid-row: 3 ;
+}
+
+.N1Sup {
+    grid-column: 1/5;
+    grid-row: 4;
+}
+
+.N2Sup {
+    grid-column: 5/10;
+    grid-row: 4;
+}
+
+.ACInf {
+    grid-column: 1/7;
+    grid-row: 5/8;
+}
+
+.AC1Inf {
+    grid-column: 7/10;
+    grid-row: 5;
+}
+
+.AC2Inf {
+    grid-column: 7/10;
+    grid-row: 6;
+}
+
+.AC3Inf {
+    grid-column: 7/10;
+    grid-row: 7;
+}
+
+.N1Inf {
+    grid-column: 1/5;
+    grid-row: 8;
+}
+
+.N2Inf {
+    grid-column: 5/10;
+    grid-row: 8;
+}
+
+
+
+
+@media (max-width: 768px){
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(18, 1fr);
+    }
+
+    .ACSup,
+    .AC1Sup,
+    .AC2Sup,
+    .AC3Sup,
+    .N1Sup,
+    .N2Sup,
+    .ACInf,
+    .AC1Inf,
+    .AC2Inf,
+    .AC3Inf,
+    .N1Inf,
+    .N2Inf {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .ACSup{ grid-column: auto; grid-row: 1/4; } 
+    .ACInf{ grid-column: auto; grid-row: 8/11; }
+}
