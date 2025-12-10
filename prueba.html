@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagen fija + contenedor</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+    }
+
+    /* Imagen fija a la izquierda */
+    .imagen {
+      width: 40%;
+      min-width: 400px; /* asegura que no se reduzca demasiado */
+      background: url("https://picsum.photos/800/1200") no-repeat center center;
+      background-size: cover;
+      position: fixed; /* se queda fija en el lado izquierdo */
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    /* Contenedor negro a la derecha */
+    .contenedor {
+      flex: 1;
+      margin-left: 40%; /* deja espacio para la imagen */
+      background-color: black;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    /* Cuando la pantalla es más pequeña */
+    @media (max-width: 600px) {
+      .contenedor {
+        margin-left: 0; /* el contenedor pasa por encima */
+        position: relative;
+        background-color: rgba(0,0,0,0.9); /* semitransparente para ver la imagen debajo */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="imagen"></div>
+  <div class="contenedor">
+    <h1>Texto en el contenedor</h1>
+    <p>
+      Este es el contenido que ocupa el lado derecho.  
+      Haz la pantalla más pequeña y verás cómo se superpone sobre la imagen.
+    </p>
+  </div>
+</body>
+</html>
