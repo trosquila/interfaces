@@ -68,12 +68,7 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
 
     }
-    .header .nombre-sitio {
-            /*Aquí va el posicionamiento grid */
-    }
-    .header .menu {
-            /*Aquí va el posicionamiento grid */
-    }
+
 }
 
 .header .menu a {
@@ -110,7 +105,7 @@ h3 {
 .venta {
        /*Aquí va el posicionamiento grid */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 .venta img {
@@ -120,15 +115,13 @@ h3 {
         /*Aquí va el posicionamiento grid */
         display: grid;
         grid-template-columns: auto;
-        grid-column:1/4;
+        grid-column:1/3;
 
 }
 @media screen and (min-width:700px) {
 
     .destacada {
         /*Aquí va el posicionamiento grid */
-        grid-template-columns: repeat(2, 1fr);
-        grid-column:1/3;
     }
 }
 
@@ -137,11 +130,14 @@ h3 {
 @media (min-width:768px) {
     .venta {
             /*Aquí va el posicionamiento grid */
-            
+            grid-template-columns: repeat(3, 1fr);
     }
     
     .destacada {
             /*Aquí va el posicionamiento grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column:1/3;
     }  
 }
 
@@ -193,7 +189,10 @@ h3 {
 @media (min-width:768px) {
     .footer .contenedor {
             /*Aquí va el posicionamiento grid */
-
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -208,14 +207,14 @@ h3 {
     /*Aquí va el posicionamiento grid */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
+
 }
 
 .footer .contenedor-casas .casa {
     /*Aquí va el posicionamiento grid */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 .footer .contenedor-casas .casa p {
     margin: 0;
