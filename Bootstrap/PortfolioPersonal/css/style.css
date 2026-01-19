@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+h4, p{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 70px;
+}
+.nombreCabecera{
+    gap: 20px;
+}
+.textoBlanco{
+    color: white;
+}
+.azulUno{
+    background-color: blue;
+}
+.azulDos{
+    background-color: blue;
+}
+.azulTres{
+    background-color: blue;
+}
