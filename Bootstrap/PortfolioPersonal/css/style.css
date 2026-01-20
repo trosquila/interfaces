@@ -41,6 +41,10 @@ header .col-4 > .col {
 .container, .row>* {
     padding: 0;
 }
-img{
+.portafolio{
+    background-color: white;
+    margin-top: 30px;
+}
+.portafolio > img{
     height: 210px;
 }
