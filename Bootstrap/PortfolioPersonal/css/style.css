@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgb(221, 221, 221);
 }
 h4, p{
     margin: 0;
@@ -7,6 +8,7 @@ h4, p{
 }
 header{
     height: 70px;
+    background-color: white;
 }
 .nombreCabecera{
     gap: 20px;
@@ -15,11 +17,30 @@ header{
     color: white;
 }
 .azulUno{
-    background-color: blue;
+    background-color: rgb(131, 179, 235);
 }
 .azulDos{
-    background-color: blue;
+    background-color: rgb(66, 95, 173);
 }
 .azulTres{
-    background-color: blue;
+    background-color: rgb(49, 83, 134);
+}
+.container-fluid{
+    width: 80%;
+}
+header .col-4 {
+    height: 100%;
+}
+
+header .col-4 > .col {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.container, .row>* {
+    padding: 0;
+}
+img{
+    height: 210px;
 }
