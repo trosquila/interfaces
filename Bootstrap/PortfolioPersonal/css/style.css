@@ -27,6 +27,7 @@ header{
 }
 .container-fluid{
     width: 80%;
+    background-color: white;
 }
 header .col-4 {
     height: 100%;
@@ -42,9 +43,12 @@ header .col-4 > .col {
     padding: 0;
 }
 .portafolio{
-    background-color: white;
+    
     margin-top: 30px;
 }
-.portafolio > img{
+.portafolio > div > img{
+    padding: 20px;
+    width: 100%;
     height: 210px;
+    display: flex;
 }
