@@ -53,5 +53,34 @@ header .col-4 > .col {
     display: flex;
 }
 .linea{
-    
+    border: 4px solid rgb(38, 212, 255);
 }
+.portafolio h3{
+    text-align: center;
+    margin: 20px auto 30px auto;
+    color: rgb(38, 212, 255);
+}
+.imgPerfil{
+    width: 20%;
+    height: 50%;
+}
+        .skill-title {
+            font-weight: bold;
+            color: #004a7c;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .progress {
+            height: 20px;
+            border-radius: 6px; 
+            background-color: #003354;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            background-color: #46a5e4; 
+            text-align: left;
+            padding-left: 10px;
+            font-size: 0.8rem;
+            line-height: 20px;
+        }
