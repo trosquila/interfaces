@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(221, 221, 221) !important;
 }
 h4, p{
     margin: 0;
@@ -26,7 +26,7 @@ header{
     background-color: rgb(49, 83, 134);
 }
 .container-fluid{
-    width: 80%;
+    width: 80% !important;
     
 }
 header .col-4 {
@@ -43,11 +43,9 @@ header .col-4 > .col {
     padding: 0;
 }
 .portafolio{
-    margin-top: 20px;
     background-color: white;
 }
-.portafolio > div > img{
-    padding: 20px;
+.portafolio > div > a > img{
     width: 100%;
     height: 310px;
     display: flex;
@@ -60,27 +58,42 @@ header .col-4 > .col {
     margin: 20px auto 30px auto;
     color: rgb(38, 212, 255);
 }
+.h6AcercaDe{
+    color: #3a6f92;
+}
+.h6Contacto{
+    text-align: center;
+    color: #003354;
+}
 .imgPerfil{
     width: 20%;
     height: 50%;
 }
-        .skill-title {
-            font-weight: bold;
-            color: #004a7c;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
+.skill-title {
+    font-weight: bold;
+    color: #004a7c;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
 
-        .progress {
-            height: 20px;
-            border-radius: 6px; 
-            background-color: #003354;
-            margin-bottom: 20px;
-        }
-        .progress-bar {
-            background-color: #46a5e4; 
-            text-align: left;
-            padding-left: 10px;
-            font-size: 0.8rem;
-            line-height: 20px;
-        }
+
+.separar{
+    margin-top: 60px !important;
+}
+.quitarPadding{
+    padding: 0 !important;
+}
+.paddingImg{
+    padding: 20px;
+}
+.portafolio a {
+    display: inline-block;
+    position: relative;
+    background-color: #477eec; 
+    line-height: 0;        
+    padding: 0;
+    margin: 0;
+}
+.portafolio a:hover .img-fluid-custom {
+    opacity: 0.4;
+}
