@@ -10,7 +10,6 @@ p {
 }
 
 header {
-    height: 70px;
     background-color: white;
 }
 
@@ -36,7 +35,8 @@ header {
 
 .container-fluid {
     width: 80% !important;
-
+    padding: 0 !important;
+    margin: auto !important;
 }
 
 header .col-4 {
@@ -57,12 +57,14 @@ header .col-4>.col {
 
 .portafolio {
     background-color: white;
+    justify-content: center; 
 }
 
 .portafolio>div>a>img {
     width: 100%;
     height: 310px;
-    display: flex;
+    display: block;
+    object-fit: cover;
 }
 
 .linea {
@@ -107,11 +109,11 @@ header .col-4>.col {
 
 .paddingImg {
     padding: 20px;
+    box-sizing: border-box;
 }
-
 .portafolio a {
-    display: inline-block;
-    position: relative;
+    display: block;
+    width: 100%; 
     background-color: #477eec;
     line-height: 0;
     padding: 0;
@@ -159,21 +161,40 @@ header .col-4>.col {
     padding: 10px 40px;
     border-radius: 4px;
 }
+.container-fluid > .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 @media (max-width: 1200px) {
     .container {
         width: 75% !important;
     }
+
     .portafolio>div>a>img {
         width: 100%;
         height: 180px;
-        display: flex;
+        display: block;
+        object-fit: cover;
     }
+
     .paddingImg{
-        margin: auto;
+        margin: 0;
+        padding: 20px;
     }
+
     header{
         display: flex;
         margin: auto;
         width: 100% !important;
     }
+}
+@media (max-width: 991.98px) {
+  .portafolio>div>a>img {
+    height: 220px;
+  }
+}
+@media (max-width: 575.98px) {
+  .portafolio>div>a>img {
+    height: 180px;
+  }
 }
