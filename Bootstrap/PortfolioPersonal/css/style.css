@@ -1,74 +1,94 @@
-body{
+body {
     margin: 0;
     background-color: rgb(221, 221, 221) !important;
 }
-h4, p{
+
+h4,
+p {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     height: 70px;
     background-color: white;
 }
-.nombreCabecera{
+
+.nombreCabecera {
     gap: 20px;
 }
-.textoBlanco{
+
+.textoBlanco {
     color: white;
 }
-.azulUno{
+
+.azulUno {
     background-color: rgb(131, 179, 235);
 }
-.azulDos{
+
+.azulDos {
     background-color: rgb(66, 95, 173);
 }
-.azulTres{
+
+.azulTres {
     background-color: rgb(49, 83, 134);
 }
-.container-fluid{
+
+.container-fluid {
     width: 80% !important;
-    
+
 }
+
 header .col-4 {
     height: 100%;
 }
 
-header .col-4 > .col {
-    flex: 1; 
+header .col-4>.col {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
-.container, .row>* {
+
+.container,
+.row>* {
     padding: 0;
 }
-.portafolio{
+
+.portafolio {
     background-color: white;
 }
-.portafolio > div > a > img{
+
+.portafolio>div>a>img {
     width: 100%;
     height: 310px;
     display: flex;
 }
-.linea{
+
+.linea {
     border: 4px solid rgb(38, 212, 255);
 }
-.portafolio h3{
+
+.portafolio h3 {
     text-align: center;
     margin: 20px auto 30px auto;
     color: rgb(38, 212, 255);
 }
-.h6AcercaDe{
+
+.h6AcercaDe {
     color: #3a6f92;
 }
-.h6Contacto{
+
+.h6Contacto {
     text-align: center;
     color: #003354;
 }
-.imgPerfil{
+
+.imgPerfil {
     width: 20%;
     height: 50%;
 }
+
 .skill-title {
     font-weight: bold;
     color: #004a7c;
@@ -77,23 +97,83 @@ header .col-4 > .col {
 }
 
 
-.separar{
+.separar {
     margin-top: 60px !important;
 }
-.quitarPadding{
+
+.quitarPadding {
     padding: 0 !important;
 }
-.paddingImg{
+
+.paddingImg {
     padding: 20px;
 }
+
 .portafolio a {
     display: inline-block;
     position: relative;
-    background-color: #477eec; 
-    line-height: 0;        
+    background-color: #477eec;
+    line-height: 0;
     padding: 0;
     margin: 0;
 }
+
 .portafolio a:hover .img-fluid-custom {
     opacity: 0.4;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: opacity 0.3s;
+}
+
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.instagram {
+    background-color: #833AB4;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.bordeNormal {
+    border-radius: 0px !important;
+}
+
+.btn-enviar {
+    background-color: #46a5e0;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 4px;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 75% !important;
+    }
+    .portafolio>div>a>img {
+        width: 100%;
+        height: 180px;
+        display: flex;
+    }
+    .paddingImg{
+        margin: auto;
+    }
+    header{
+        display: flex;
+        margin: auto;
+        width: 100% !important;
+    }
 }
