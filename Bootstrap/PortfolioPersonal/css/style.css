@@ -101,7 +101,7 @@ header .col-4>.col {
 }
 
 
-.skill-title {
+.tituloDeHabilidad {
     font-weight: bold;
     color: #004a7c;
     margin-bottom: 5px;
@@ -131,11 +131,11 @@ header .col-4>.col {
     margin: 0;
 }
 
-.portafolio a:hover .img-fluid-custom {
+.portafolio a:hover .imagenPortfolio {
     opacity: 0.4;
 }
 
-.social-icon {
+.iconoRedSocial {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -165,31 +165,19 @@ header .col-4>.col {
     border-radius: 0px !important;
 }
 
-.btn-enviar {
+.botonEnviar {
     background-color: #46a5e0;
     border: none;
     color: white;
     padding: 10px 40px;
-    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0px;
 }
 
 .container-fluid>.row {
     margin-left: 0 !important;
     margin-right: 0 !important;
-}
-
-.about-section {
-    background: #f2f2f2;
-    padding: 30px 35px;
-    align-items: center;
-}
-
-.about-left {
-    text-align: center;
-}
-
-.about-right {
-    padding-left: 20px;
 }
 
 .h6AcercaDe {
@@ -198,7 +186,7 @@ header .col-4>.col {
     color: #3a6f92;
 }
 
-.skill-container {
+.contenedorHabilidades {
     margin-top: 16px;
 }
 
@@ -217,10 +205,14 @@ header .col-4>.col {
     margin-bottom: 22px;
 }
 
-.btn-enviar {
-    display: block;
-    margin: 0 auto;
-    border-radius: 0px;
+.largoInput {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    max-width: 520px;
 }
 
 @media (max-width: 1200px) {
