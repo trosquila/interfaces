@@ -57,7 +57,7 @@ header .col-4>.col {
 
 .portafolio {
     background-color: white;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .portafolio>div>a>img {
@@ -86,14 +86,15 @@ header .col-4>.col {
     color: #003354;
 }
 
-.imgPerfil{
+.imgPerfil {
     width: 160px;
     height: 160px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
-.nombrePerfil{
+
+.nombrePerfil {
     margin-top: 12px;
     text-align: center;
     color: #6c757d;
@@ -120,9 +121,10 @@ header .col-4>.col {
     padding: 20px;
     box-sizing: border-box;
 }
+
 .portafolio a {
     display: block;
-    width: 100%; 
+    width: 100%;
     background-color: #477eec;
     line-height: 0;
     padding: 0;
@@ -170,48 +172,52 @@ header .col-4>.col {
     padding: 10px 40px;
     border-radius: 4px;
 }
-.container-fluid > .row {
+
+.container-fluid>.row {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-.about-section{
+
+.about-section {
     background: #f2f2f2;
     padding: 30px 35px;
     align-items: center;
 }
 
-.about-left{
+.about-left {
     text-align: center;
 }
 
-.about-right{
+.about-right {
     padding-left: 20px;
 }
 
-.h6AcercaDe{
+.h6AcercaDe {
     text-align: center;
     margin-bottom: 18px;
     color: #3a6f92;
 }
-.skill-container{
+
+.skill-container {
     margin-top: 16px;
 }
 
-.progress{
+.progress {
     height: 12px;
     background: #0e5686;
 }
 
-.progress-bar{
+.progress-bar {
     font-size: 10px;
     line-height: 12px;
 }
-.h6Contacto{
+
+.h6Contacto {
     color: #3a6f92;
     margin-bottom: 22px;
 }
 
-.btn-enviar{
+.btn-enviar {
     display: block;
     margin: 0 auto;
     border-radius: 0px;
@@ -229,24 +235,26 @@ header .col-4>.col {
         object-fit: cover;
     }
 
-    .paddingImg{
+    .paddingImg {
         margin: 0;
         padding: 20px;
     }
 
-    header{
+    header {
         display: flex;
         margin: auto;
         width: 100% !important;
     }
 }
+
 @media (max-width: 991.98px) {
-  .portafolio>div>a>img {
-    height: 220px;
-  }
+    .portafolio>div>a>img {
+        height: 220px;
+    }
 }
+
 @media (max-width: 575.98px) {
-  .portafolio>div>a>img {
-    height: 180px;
-  }
+    .portafolio>div>a>img {
+        height: 180px;
+    }
 }
