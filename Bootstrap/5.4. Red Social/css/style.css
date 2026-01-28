@@ -1,0 +1,47 @@
+:root{
+    --backGround: #e6e6e6;
+    --white: #ffffff;
+    --iconoNormal: #ffffffa4;
+    --azulPredeterminado: #3066db;
+}
+body {
+    background-color: var(--backGround) !important;
+}
+
+.buscar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.buscar input {
+    width: 100%;
+    padding-right: 44px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.buscar .lupa {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translate(-50px, -12px);
+    pointer-events: none;
+    font-size: 18px;
+}
+.quitarEstiloEnlace{
+    text-decoration: none;
+}
+
+.icono{
+    color: var(--iconoNormal) !important;
+    font-size: 16pt;
+}
+header{
+    background-color:  var(--azulPredeterminado);
+    padding: 15px 20px;
+}
+.imgPerfilCabecera{
+    width: 20px;
+    height: 20px;
+}
