@@ -58,3 +58,11 @@ header{
 .separarDerecha{
     padding-right: 40px;
 }
+.imagenPerfilComentarios{
+    width: 8%;
+    height: 8%;
+}
+.cajaComentarios{
+    border-radius: 0;
+    height: 200px;
+}
