@@ -37,6 +37,13 @@ body {
     color: var(--iconoNormal) !important;
     font-size: 16pt;
 }
+.iconosMenuIzquierdo{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+.separarIconosMenuIzq{
+    margin-bottom: 20px;
+}
 header{
     background-color:  var(--azulPredeterminado);
     padding: 15px 20px;
@@ -44,4 +51,10 @@ header{
 .imgPerfilCabecera{
     width: 20px;
     height: 20px;
+}
+.separarIzq{
+    padding-left: 40px;
+}
+.separarDerecha{
+    padding-right: 40px;
 }
