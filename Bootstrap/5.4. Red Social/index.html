@@ -15,11 +15,18 @@
 <body>
     <section>
         <header class="container-fluid">
-            <div class="row align-items-center py-2">
+            <div class="row align-items-center">
 
                 <div class="col-2 col-md-1 order-1">
                     <i class="icon-rocket icono d-none d-md-block"></i>
                     <i class="icon-menu icono d-md-none"></i>
+                </div>
+
+                <div class="col-12 col-md-7 order-3 order-md-2">
+                    <form action="" class="buscar">
+                        <input type="text" placeholder="Busca">
+                        <i class="icon-search-1 lupa"></i>
+                    </form>
                 </div>
 
                 <div class="col-10 col-md-4 order-2 order-md-3 text-end">
@@ -37,56 +44,46 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-7 order-3 order-md-2 mt-2 mt-md-0">
-                    <form action="" class="row buscar">
-                        <div class="col-10">
-                            <input type="text">
-                        </div>
-                        <div class="col-2 lupa">
-                            <i class="icon-search-1"></i>
-                        </div>
-                    </form>
-                </div>
-
             </div>
         </header>
-        <main class="py-4">
+
+        <main class="container-fluid">
             <div class="row">
 
-                <div class="col-md-2 separarDerecha separarIzq d-none d-md-block">
-                    <ul class="list-unstyled menu-lateral">
-                        <li class="separarIconosMenuIzq">
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                <div class="col-md-2 menu-izquierdo d-none d-md-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-users me-2"></i> Amigos
                             </a>
                         </li>
-                        <li class="separarIconosMenuIzq">
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                        <li>
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-mail me-2"></i> Mensajes Privados
                             </a>
                         </li>
-                        <li class="separarIconosMenuIzq">
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                        <li>
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-thumbs-up me-2"></i> Paginas
                             </a>
                         </li>
-                        <li class="separarIconosMenuIzq">
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                        <li>
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-play me-2"></i> Videos
                             </a>
                         </li>
-                        <li class="separarIconosMenuIzq">
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                        <li>
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-file-image me-2"></i> Fotos
                             </a>
                         </li>
-                        <li class="separarIconosMenuIzq">
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                        <li>
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-music me-2"></i> Musica
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="enlace-menu iconosMenuIzquierdo">
+                            <a href="#" class="enlace-menu">
                                 <i class="icon-book me-2"></i> Libros
                             </a>
                         </li>
@@ -94,88 +91,83 @@
                     <hr>
                 </div>
 
-                <section class="col-12 col-md-7">
+                <section class="col-12 col-md-7 contenido-principal">
 
-                    <div class=" b-4 border-0 p-3">
-                        <div class="d-flex">
-                            <img src="img/profile.png" class="rounded-circle imagenPerfilComentarios me-3 avatar-main" alt="Perfil">
-                            <textarea class="form-control border-light-subtle cajaComentarios" placeholder="Publicar Mensaje"
-                                rows="3"></textarea>
+                    <div class="card-publicar">
+                        <div class="d-flex align-items-start">
+                            <img src="img/profile.png" class="rounded-circle avatar-post me-2" alt="Perfil">
+                            <textarea class="form-control" placeholder="Publicar Mensaje" rows="2"></textarea>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-3">
-                            <div class="iconos-publicar text-secondary">
-                                <i class="icon-file-image mx-2"></i>
-                                <i class="icon-play mx-2"></i>
-                                <i class="icon-music mx-2"></i>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="iconos-publicar">
+                                <i class="icon-file-image"></i>
+                                <i class="icon-play"></i>
+                                <i class="icon-music"></i>
                             </div>
-                            <button class="btn btn-primary px-4">Publicar</button>
+                            <button class="btn btn-primary btn-sm">Publicar</button>
                         </div>
                     </div>
 
-                    <div class="border-0 p-3 mb-4">
+                    <div class="post-card">
                         <div class="d-flex align-items-center mb-2">
-                            <img src="img/donald.png" class="rounded-circle me-2 avatar-post" alt="Trump">
-                            <h6 class="mb-0 text-primary fw-bold">Donald Trump</h6>
+                            <img src="img/trump.jpg" class="rounded-circle avatar-post me-2" alt="Trump">
+                            <h6 class="mb-0 nombre-usuario">Donald Trump</h6>
                         </div>
-                        <div class="bg-white p-3 border rounded mb-3">
-                            <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="contenido-post">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eligendi, quidem veniam ullam vitae ipsa quo cumque? Consequuntur ab, sunt, consequatur impedit eius commodi necessitatibus eos quibusdam enim illo quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates nesciunt dolores ratione quo iusto aliquam debitis consequuntur iste exercitationem blanditiis eos nam, enim earum delectus et adipisci? Natus, minima.</p>
                         </div>
 
-                        <div class="d-flex justify-content-between align-items-center border-bottom pb-3">
+                        <div class="d-flex justify-content-between align-items-center likes-section">
                             <button class="btn btn-primary btn-sm"><i class="icon-thumbs-up"></i></button>
-                            <span class="small text-primary">15 <i class="icon-thumbs-up"></i></span>
+                            <span class="texto-likes">15 <i class="icon-thumbs-up"></i></span>
                         </div>
 
-                        <div class="mt-3">
-                            <div class="d-flex mb-3">
-                                <img src="img/profile.png" class="rounded-circle imagenPerfilComentarios me-2 avatar-sm" alt="Yo">
-                                <input type="text" class="form-control form-control-sm border-light-subtle"
+                        <div class="comentarios-section">
+                            <div class="d-flex mb-2">
+                                <img src="img/profile.png" class="rounded-circle avatar-comentario me-2" alt="Yo">
+                                <input type="text" class="form-control form-control-sm"
                                     placeholder="Comentario">
                             </div>
 
-                            <div class="d-flex mb-3 pt-3 border-top">
-                                <img src="img/vladimir.png" class="rounded-circle me-2 avatar-sm" alt="Putin">
-                                <div>
-                                    <p class="small mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam.</p>
-                                    <a href="#" class="text-decoration-none small">Me gusta</a>
+                            <div class="comentario">
+                                <div class="d-flex">
+                                    <img src="img/putin.jpg" class="rounded-circle avatar-comentario me-2" alt="Putin">
+                                    <div>
+                                        <p class="texto-comentario">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam.</p>
+                                        <a href="#" class="link-me-gusta">Me gusta</a>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="d-flex mb-2 pt-3 border-top">
-                                <img src="img/xi.png" class="rounded-circle me-2 avatar-sm" alt="Xi">
-                                <div>
-                                    <p class="small mb-1">Incididunt ut labore et dolore magna aliqua.</p>
-                                    <a href="#" class="text-decoration-none small">Me gusta</a>
+                            <div class="comentario">
+                                <div class="d-flex">
+                                    <img src="img/king.jpg" class="rounded-circle avatar-comentario me-2" alt="Xi">
+                                    <div>
+                                        <p class="texto-comentario">Incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="link-me-gusta">Me gusta</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <aside class="col-md-3 d-none d-md-block">
-                    <h6 class="text-center text-muted mb-3">Publicidad</h6>
-                    <div class="mb-3">
-                        <div class="bg-secondary-subtle ratio ratio-16x9 rounded mb-2 overflow-hidden">
-                            <img src="img/pub1.jpg" class="object-fit-cover" alt="Ad">
-                        </div>
-                        <div class="bg-secondary-subtle ratio ratio-16x9 rounded mb-2 overflow-hidden">
-                            <img src="img/pub2.jpg" class="object-fit-cover" alt="Ad">
-                        </div>
-                        <div class="bg-secondary-subtle ratio ratio-16x9 rounded mb-3 overflow-hidden">
-                            <img src="img/pub3.jpg" class="object-fit-cover" alt="Ad">
-                        </div>
+                <aside class="col-md-3 sidebar-derecho d-none d-md-block">
+                    <h6 class="titulo-publicidad">Publicidad</h6>
+                    <div class="contenedor-ads">
+                        <img src="img/ad1.jpg" class="ad-imagen" alt="Ad">
+                        <img src="img/ad2.jpg" class="ad-imagen" alt="Ad">
+                        <img src="img/ad3.jpg" class="ad-imagen" alt="Ad">
                     </div>
-                    <footer class="small text-muted">
-                        <div class="d-flex flex-wrap gap-2 mb-2">
-                            <a href="#" class="text-decoration-none">Privacidad</a>
-                            <a href="#" class="text-decoration-none">Condiciones</a>
-                            <a href="#" class="text-decoration-none">Publicidad</a>
+                    <footer class="footer-sidebar">
+                        <div class="enlaces-footer">
+                            <a href="#">Privacidad</a>
+                            <a href="#">Condiciones</a>
                         </div>
-                        <p>Red Social DAW © 2026</p>
+                        <a href="#" class="d-block">Publicidad</a>
+                        <p class="copyright">Red Social DAW © 2026</p>
                     </footer>
                 </aside>
 
