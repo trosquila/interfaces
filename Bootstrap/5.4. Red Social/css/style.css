@@ -1,14 +1,27 @@
 :root {
+    /* Paleta Principal */
     --colorFondo: #e9ebee;
     --colorBlanco: #ffffff;
     --colorPrimario: #1976d2;
     --colorPrimarioHover: #1565c0;
+    --colorBorde: #c7c8ca;
+    --colorBordeSuave: #ddd;
+    --colorBordeComentario: #cbcbcb;
+    --colorFondoClaro: #f5f5f5;
+
     --colorTextoGris: #3d3d3d;
     --colorTextoClaro: #6d6d6d;
-    --colorIconoClaro: rgba(255, 255, 255, 0.8);
-    --colorBorde: #c7c8ca;
-    --colorFondoClaro: #f5f5f5;
+    --colorTextoPost: #3d3c3c;
+    --colorTextoMuted: #919191;
+    --colorTextoOscuro: #333;
     --colorEnlace: #1176b6;
+    --colorIconoClaro: rgba(255, 255, 255, 0.8);
+    --colorIconoGris: #8d8d8d;
+    
+    --colorBusquedaHover: #099efc;
+    --colorOverlay: rgba(0, 0, 0, 0.5);
+    --colorOverlayMovil: rgba(0, 0, 0, 0.85);
+
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteSecundaria: 'Roboto', sans-serif;
 }
@@ -32,7 +45,10 @@ a:hover {
     background-color: var(--colorPrimario);
     padding: 10px 0;
 }
-
+.contenidoCabecera{
+    width: 95%;
+    margin: auto;
+}
 .contenedorLogo {
     display: flex;
     align-items: center;
@@ -91,24 +107,6 @@ a:hover {
 .inputBusqueda:focus {
     outline: none;
     box-shadow: none;
-}
-
-.botonBusqueda {
-    width: 100%;
-    background-color: var(--colorBlanco);
-    border: none;
-    font-size: 12px;
-    padding: 0 10px;
-    height: 25px;
-    line-height: 25px;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-    color: var(--colorTextoClaro);
-}
-
-.botonBusqueda:hover {
-    background-color: #099efc;
-    color: var(--colorBlanco);
 }
 
 .menuNavegacion {
@@ -207,7 +205,7 @@ a:hover {
 }
 
 .enlaceIcono {
-    color: #8d8d8d;
+    color: var(--colorIconoGris);
     font-size: 20px;
     text-decoration: none;
 }
@@ -217,18 +215,14 @@ a:hover {
 }
 
 .botonPublicar {
-    border: 1px solid #00609c;
+    border: none;
     padding: 5px 30px;
     font-size: 14px;
     font-family: var(--fuenteSecundaria);
-    background: linear-gradient(to bottom, #1a87cd, var(--colorEnlace) 100%);
+    background: var(--colorPrimario);
     color: var(--colorBlanco);
     border-radius: 3px;
     cursor: pointer;
-}
-
-.botonPublicar:hover {
-    background: linear-gradient(to bottom, var(--colorEnlace), #1a87cd 100%);
 }
 
 .tarjetaPublicacion {
@@ -262,11 +256,11 @@ a:hover {
 
 .textoPost {
     background-color: var(--colorBlanco);
-    color: #3d3c3c;
+    color: var(--colorTextoPost);
     font-size: 14px;
     padding: 15px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--colorBordeSuave);
 }
 
 .textoPost p {
@@ -276,7 +270,7 @@ a:hover {
 
 .descripcionPost {
     font-size: 14px;
-    color: #3d3c3c;
+    color: var(--colorTextoPost);
     margin-bottom: 10px;
 }
 
@@ -327,7 +321,7 @@ a:hover {
 .contenedorComentario {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: 1px solid var(--colorBordeComentario);
 }
 
 .contenedorComentario:last-child {
@@ -349,7 +343,7 @@ a:hover {
 .areaTextoComentario {
     width: 100%;
     background-color: var(--colorBlanco);
-    border: 1px solid #cbcbcb;
+    border: 1px solid var(--colorBordeComentario);
     color: #565656;
     padding: 8px;
     min-height: 40px;
@@ -367,7 +361,7 @@ a:hover {
 .textoRespuesta {
     font-size: 14px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--colorTextoOscuro);
 }
 
 .enlaceMeGusta {
@@ -388,7 +382,7 @@ a:hover {
     font-family: var(--fuenteSecundaria);
     font-size: 16px;
     text-align: center;
-    color: #666;
+    color: var(--colorTextoClaro);
     margin-bottom: 15px;
     font-weight: normal;
 }
@@ -408,7 +402,6 @@ a:hover {
     object-fit: cover;
 }
 
-/* Footer */
 .piePagina {
     font-family: var(--fuenteSecundaria);
     font-size: 14px;
@@ -431,7 +424,7 @@ a:hover {
 }
 
 .textoCopyright {
-    color: #919191;
+    color: var(--colorTextoMuted);
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 12px;
@@ -444,7 +437,7 @@ a:hover {
     top: 0;
     left: 0;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--colorOverlay);
     z-index: 99;
     display: none;
     text-decoration: none;
@@ -465,6 +458,8 @@ a:hover {
     padding-right: 44px;
     height: 40px;
     box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
 }
 
 .buscar .lupa {
@@ -474,19 +469,22 @@ a:hover {
     transform: translate(-50px, -12px);
     pointer-events: none;
 }
+
 @media screen and (max-width: 767px) {
     .botonMenuMovil {
         display: block;
-        border: 1px solid #00609c;
+        border: none;
         padding: 5px 10px;
         font-size: 14px;
-        background: linear-gradient(to bottom, #1a87cd, var(--colorEnlace) 100%);
+        background: var(--colorPrimario);
         color: var(--colorBlanco);
         border-radius: 3px;
         cursor: pointer;
         margin-bottom: 20px;
         text-align: center;
         text-decoration: none;
+    }.botonMenuMovil > p{
+        margin: 0;
     }
 
     .botonMenuMovil:hover {
@@ -494,13 +492,14 @@ a:hover {
         background: #0d659d;
         color: var(--colorBlanco);
     }
+
     .barraLateralIzquierda {
         width: 85%;
         position: fixed;
         z-index: 100;
         left: 0;
         top: 0;
-        background: rgba(0, 0, 0, 0.85);
+        background: var(--colorOverlayMovil);
         height: 100vh;
         margin: 0;
         padding: 20px 0;
@@ -513,9 +512,7 @@ a:hover {
         transform: translateX(0);
     }
 
-    .navegacionLateral {
-        border-bottom: none;
-    }
+
 
     .enlaceMenuLateral {
         padding: 20px;
@@ -555,13 +552,3 @@ a:hover {
     }
 }
 
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
