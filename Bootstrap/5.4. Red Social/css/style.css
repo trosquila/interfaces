@@ -1,27 +1,21 @@
 :root {
-    /* Paleta Principal */
     --colorFondo: #e9ebee;
     --colorBlanco: #ffffff;
     --colorPrimario: #1976d2;
     --colorPrimarioHover: #1565c0;
     --colorBorde: #c7c8ca;
     --colorBordeSuave: #ddd;
-    --colorBordeComentario: #cbcbcb;
     --colorFondoClaro: #f5f5f5;
-
-    --colorTextoGris: #3d3d3d;
-    --colorTextoClaro: #6d6d6d;
-    --colorTextoPost: #3d3c3c;
+    --colorTextoPrincipal: #3d3d3d;
+    --colorTextoSecundario: #565656;
     --colorTextoMuted: #919191;
-    --colorTextoOscuro: #333;
     --colorEnlace: #1176b6;
     --colorIconoClaro: rgba(255, 255, 255, 0.8);
     --colorIconoGris: #8d8d8d;
-    
-    --colorBusquedaHover: #099efc;
     --colorOverlay: rgba(0, 0, 0, 0.5);
     --colorOverlayMovil: rgba(0, 0, 0, 0.85);
-
+    --colorSombraSuave: rgba(0, 0, 0, 0.35);
+    --colorSombraFuerte: rgba(0, 0, 0, 0.4);
     --fuentePrincipal: 'Open Sans', sans-serif;
     --fuenteSecundaria: 'Roboto', sans-serif;
 }
@@ -45,10 +39,12 @@ a:hover {
     background-color: var(--colorPrimario);
     padding: 10px 0;
 }
-.contenidoCabecera{
+
+.contenidoCabecera {
     width: 95%;
     margin: auto;
 }
+
 .contenedorLogo {
     display: flex;
     align-items: center;
@@ -87,28 +83,6 @@ a:hover {
     color: var(--colorBlanco);
 }
 
-.formularioBusqueda {
-    position: relative;
-}
-
-.inputBusqueda {
-    width: 100%;
-    background-color: var(--colorBlanco);
-    border: none;
-    font-size: 12px;
-    padding: 0 10px;
-    height: 25px;
-    line-height: 25px;
-    border-radius: 3px 0 0 3px;
-    color: var(--colorTextoClaro);
-    font-family: var(--fuentePrincipal);
-}
-
-.inputBusqueda:focus {
-    outline: none;
-    box-shadow: none;
-}
-
 .menuNavegacion {
     display: flex;
     justify-content: flex-end;
@@ -134,14 +108,14 @@ a:hover {
     display: block;
     padding: 8px 10px;
     font-family: var(--fuenteSecundaria);
-    color: var(--colorTextoGris);
+    color: var(--colorTextoPrincipal);
     text-decoration: none;
     font-size: 14px;
 }
 
 .enlaceMenuLateral:hover {
     background-color: var(--colorFondoClaro);
-    color: var(--colorTextoGris);
+    color: var(--colorTextoPrincipal);
     text-decoration: none;
 }
 
@@ -183,15 +157,15 @@ a:hover {
     padding: 15px;
     font-size: 16px;
     font-family: var(--fuentePrincipal);
-    color: #565656;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+    color: var(--colorTextoSecundario);
+    box-shadow: 0px 2px 2px 0px var(--colorSombraSuave);
     resize: vertical;
     background-color: var(--colorBlanco);
 }
 
 .areaTextoPublicar:focus {
     outline: none;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 4px 0px var(--colorSombraFuerte);
 }
 
 .contenedorBotonesPublicar {
@@ -211,7 +185,7 @@ a:hover {
 }
 
 .enlaceIcono:hover {
-    color: var(--colorTextoGris);
+    color: var(--colorTextoPrincipal);
 }
 
 .botonPublicar {
@@ -256,7 +230,7 @@ a:hover {
 
 .textoPost {
     background-color: var(--colorBlanco);
-    color: var(--colorTextoPost);
+    color: var(--colorTextoPrincipal);
     font-size: 14px;
     padding: 15px;
     margin-bottom: 15px;
@@ -270,7 +244,7 @@ a:hover {
 
 .descripcionPost {
     font-size: 14px;
-    color: var(--colorTextoPost);
+    color: var(--colorTextoPrincipal);
     margin-bottom: 10px;
 }
 
@@ -321,11 +295,7 @@ a:hover {
 .contenedorComentario {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--colorBordeComentario);
-}
-
-.contenedorComentario:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid var(--colorBorde);
 }
 
 .contenedorFotoComentario {
@@ -343,8 +313,8 @@ a:hover {
 .areaTextoComentario {
     width: 100%;
     background-color: var(--colorBlanco);
-    border: 1px solid var(--colorBordeComentario);
-    color: #565656;
+    border: 1px solid var(--colorBorde);
+    color: var(--colorTextoSecundario);
     padding: 8px;
     min-height: 40px;
     height: 40px;
@@ -361,17 +331,13 @@ a:hover {
 .textoRespuesta {
     font-size: 14px;
     margin-bottom: 10px;
-    color: var(--colorTextoOscuro);
+    color: var(--colorTextoPrincipal);
 }
 
 .enlaceMeGusta {
     font-size: 14px;
     color: var(--colorEnlace);
     text-decoration: none;
-}
-
-.enlaceMeGusta:hover {
-    text-decoration: underline;
 }
 
 .barraLateralDerecha {
@@ -382,7 +348,7 @@ a:hover {
     font-family: var(--fuenteSecundaria);
     font-size: 16px;
     text-align: center;
-    color: var(--colorTextoClaro);
+    color: var(--colorTextoSecundario);
     margin-bottom: 15px;
     font-weight: normal;
 }
@@ -417,10 +383,6 @@ a:hover {
     text-decoration: none;
     margin-right: 10px;
     font-size: 12px;
-}
-
-.piePagina a:hover {
-    text-decoration: underline;
 }
 
 .textoCopyright {
@@ -483,13 +445,15 @@ a:hover {
         margin-bottom: 20px;
         text-align: center;
         text-decoration: none;
-    }.botonMenuMovil > p{
+    }
+
+    .botonMenuMovil>p {
         margin: 0;
     }
 
     .botonMenuMovil:hover {
         text-decoration: none;
-        background: #0d659d;
+        background: var(--colorPrimarioHover);
         color: var(--colorBlanco);
     }
 
@@ -512,15 +476,13 @@ a:hover {
         transform: translateX(0);
     }
 
-
-
     .enlaceMenuLateral {
         padding: 20px;
         color: var(--colorBlanco);
     }
 
     .enlaceMenuLateral:hover {
-        color: var(--colorTextoGris);
+        color: var(--colorTextoPrincipal);
         background-color: var(--colorBlanco);
     }
 
@@ -540,15 +502,8 @@ a:hover {
     .contenedorFotoPublicar {
         display: none;
     }
-}
 
-@media screen and (max-width: 575px) {
     .menuNavegacion {
-        padding: 15px 15px 0 15px;
-    }
-
-    .formularioBusqueda {
-        margin-bottom: 10px;
+        justify-content: space-between;
     }
 }
-
