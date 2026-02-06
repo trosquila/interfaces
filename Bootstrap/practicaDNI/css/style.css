@@ -1,0 +1,60 @@
+:root {
+    --azulPrimario: #2E5EAB;
+    --amarilloAcento: #EBD93A;
+    --verdeSecundario: #8D9C73;
+
+    --fondoClaro: #F8F9FA;
+    --superficie: #FFFFFF;
+    --textoPrincipal: #1A1A1A;
+    --textoAtenuado: #555555;
+
+    --botonFondo: var(--azulPrimario);
+    --botonTexto: #FFFFFF;
+    --botonHover: #244B8A;
+    --botonActivo: #1B3868;
+
+    --enlaceColor: var(--azulPrimario);
+    --enlaceHover: var(--verdeSecundario);
+    --anilloEnfoque: rgba(46, 94, 171, 0.4);
+
+    --exito: var(--verdeSecundario);
+    --advertencia: var(--amarilloAcento);
+}
+body{
+    margin: 0;
+}
+
+header{}
+
+header img{
+    width: 330px !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+nav{
+    background-color: var(--azulPrimario);
+}
+
+.cuadrosEnlaceMenu{
+    padding: 5px 10px;
+    text-align: center !important;
+    
+}
+
+.cuadrosEnlaceMenu a{
+    color: var(--botonTexto) !important;
+
+}
+
+.cuadrosEnlaceMenu:hover{
+    padding: 5px 10px;
+    background-color: var(--botonHover);
+}
+
+.cuadrosEnlaceMenu:active{
+    padding: 5px 10px;
+    background-color: var(--botonActivo);
+}
