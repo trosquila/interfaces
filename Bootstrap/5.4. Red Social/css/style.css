@@ -428,7 +428,7 @@ a:hover {
     position: absolute;
     right: 12px;
     top: 50%;
-    transform: translate(-50px, -12px);
+    transform: translate(-12px, -12px);
     pointer-events: none;
 }
 
