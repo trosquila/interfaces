@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/menu.js"></script>
+    <title>Policia Nacional</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div id="barraLateralIzquierda" class="barra-lateral d-md-none">
+    <nav class="d-flex flex-column p-3">
+        <a href="../index.html" class="py-2 border-bottom">Inicio</a>
+        <a href="citaPrevia.html" class="py-2 border-bottom">Pedir Cita</a>
+        <a href="avisoLegal.html" class="py-2 border-bottom">Aviso Legal</a>
+        <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="py-2">Más ayuda</a>
+    </nav>
+</div>
+    <main class="flex-grow-1">
+        <header class="container-fluid p-0">
+            <div class="row m-0 d-flex justify-content-center align-items-center mb-3 pt-3">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center gap-3 mb-3 mb-md-0">
+                    <img src="../img/LogoMinisterioInterior.svg" alt="Logo Ministerio Interior"
+                        class="img-fluid logo-header">
+                    <img src="../img/LogoPoliciaNacional.svg" alt="Logo Policia Nacional" class="img-fluid logo-header">
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <form action="" class="row buscar m-0 d-flex justify-content-center">
+                        <div class="col-10 p-0">
+                            <input type="text" class="form-control" placeholder="Buscar...">
+                        </div>
+                        <div class="col-2 lupa d-flex align-items-center justify-content-center">
+                            <i class="icon-search"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-md p-0 shadow-sm menuSuperior">
+                <div class="container-fluid p-0">
+
+                    <button class="navbar-toggler w-100 border-0 text-white d-md-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navPolicia" aria-controls="navPolicia"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                            <span class="mb-0">Menú</span>
+                            <i class="icon-menu iconoCabecera" id="btnMenuMovil"></i>
+                        </div>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navPolicia">
+                        <div class="navbar-nav row m-0 w-100 text-center">
+                            <div class="col-12 col-md-3 p-0 cuadrosEnlaceMenu">
+                                <a href="../index.html" class="nav-link d-block py-2">Inicio</a>
+                            </div>
+                            <div class="col-12 col-md-3 p-0 cuadrosEnlaceMenu">
+                                <a href="CitaPrevia.html" class="nav-link d-block py-2">Pedir Cita</a>
+                            </div>
+                            <div class="col-12 col-md-3 p-0 cuadrosEnlaceMenu">
+                                <a href="avisoLegal.html" class="nav-link d-block py-2">Aviso Legal</a>
+                            </div>
+                            <div class="col-12 col-md-3 p-0 cuadrosEnlaceMenu">
+                                <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="nav-link d-block py-2">Más ayuda</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <a href="#" class="fondoOscuro d-md-none" id="fondoEnlace"></a>
+
+        <section class="container mt-5">
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Policía Nacional</h5>
+                    <p class="small">Servicio al ciudadano, seguridad y trámites oficiales del Ministerio del Interior.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces de Interés</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Accesibilidad</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Mapa Web</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p class="small">
+                        Emergencias: 091<br>
+                        Información: 902 xxx xxx
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small">
+                &copy; 2026 Cuerpo Nacional de Policía. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
