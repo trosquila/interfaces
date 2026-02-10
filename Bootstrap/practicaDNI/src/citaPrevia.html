@@ -78,6 +78,122 @@
         <a href="#" class="fondoOscuro d-md-none" id="fondoEnlace"></a>
 
         <section class="container mt-5">
+            <form class="row g-4 needs-validation">
+    
+    <div class="col-12">
+        <h5 class="border-bottom pb-2"><i class="icon-doc-text"></i> 1. Selección de Trámite</h5>
+        <div class="form-floating">
+            <select class="form-select" id="tramite" required>
+                <option selected disabled value="">Seleccione un trámite...</option>
+                <option value="dni">Documento Nacional de Identidad (DNI)</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="ambos">DNI y Pasaporte (Cita conjunta)</option>
+                <option value="certificados">Renovación de Certificados</option>
+            </select>
+            <label for="tramite">Tipo de Trámite</label>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-floating">
+            <select class="form-select" id="provincia" required>
+                <option selected disabled value="">Seleccione Provincia...</option>
+                <option>Madrid</option>
+                <option>Barcelona</option>
+                <option>Valencia</option>
+                </select>
+            <label for="provincia">Provincia</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <select class="form-select" id="oficina" required>
+                <option selected disabled value="">Seleccione Oficina...</option>
+                <option>Comisaría Central</option>
+                <option>Oficina Distrito Norte</option>
+            </select>
+            <label for="oficina">Oficina de Expedición</label>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="date" class="form-control" id="fechaCita" required>
+            <label for="fechaCita">Fecha deseada</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="time" class="form-control" id="horaCita" required>
+            <label for="horaCita">Hora</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <h5 class="border-bottom pb-2 mt-3"><i class="icon-user"></i> 2. Datos del Documento y Contacto</h5>
+        <div class="alert alert-info d-flex align-items-start shadow-sm mb-4" role="alert">
+            <i class="icon-help-circled fs-4 me-3 mt-1"></i>
+            <div>
+                <strong>¿Dónde encontrar los datos?</strong><br>
+                <small>
+                    - <strong>Equipo de Expedición:</strong> Código alfanumérico en el reverso.<br>
+                    - <strong>Número de Soporte:</strong> 9 caracteres (3 letras y 6 números) en el anverso.<br>
+                    - <strong>Validez:</strong> Fecha debajo de su foto.
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="numDni" placeholder="12345678A" required pattern="[0-9]{8}[A-Z]">
+            <label for="numDni">Número de DNI (con letra)</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="numSoporte" placeholder="ABC123456" required>
+            <label for="numSoporte">Número de Soporte (Anverso)</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="equipoExp" placeholder="ABC1234" required>
+            <label for="equipoExp">Equipo de Expedición</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="date" class="form-control" id="validezDni" required>
+            <label for="validezDni">Fecha de Validez del DNI</label>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="tel" class="form-control" id="telefono" placeholder="600000000" required>
+            <label for="telefono">Teléfono móvil</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+            <label for="email">Email para confirmación</label>
+        </div>
+    </div>
+
+    <div class="col-12 mt-4">
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="terminos" required>
+            <label class="form-check-label small" for="terminos">
+                He verificado que los datos son correctos y acepto la política de privacidad.
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-100 py-3 shadow">
+            Confirmar y Enviar Solicitud de Cita
+        </button>
+    </div>
+</form>
         </section>
     </main>
 

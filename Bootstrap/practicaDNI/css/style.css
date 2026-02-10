@@ -31,7 +31,15 @@ header img{
 a{
     text-decoration: none !important;
 }
-
+.enlaces{
+    color: var(--enlaceColor);
+}
+.enlaces:hover{
+    color: var(--enlaceHover);
+}
+.enlaces:active{
+    color: var(--anilloEnfoque);
+}
 .menuSuperior{
     background-color: var(--azulPrimario);
 }
