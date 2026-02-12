@@ -9,19 +9,24 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/fontello.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
     <script src="../js/menu.js"></script>
     <title>Policia Nacional</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <div id="barraLateralIzquierda" class="barra-lateral d-md-none">
-    <nav class="d-flex flex-column p-3">
-        <a href="../index.html" class="py-2 border-bottom">Inicio</a>
-        <a href="citaPrevia.html" class="py-2 border-bottom">Pedir Cita</a>
-        <a href="masInfo.html" class="py-2 border-bottom">Más información</a>
-        <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="py-2">Más ayuda</a>
-    </nav>
-</div>
+        <nav class="d-flex flex-column p-3">
+            <a href="../index.html" class="py-2 border-bottom">Inicio</a>
+            <a href="citaPrevia.html" class="py-2 border-bottom">Pedir Cita</a>
+            <a href="masInfo.html" class="py-2 border-bottom">Más información</a>
+            <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="py-2">Más ayuda</a>
+        </nav>
+    </div>
     <main class="flex-grow-1">
         <header class="container-fluid p-0">
             <div class="row m-0 d-flex justify-content-center align-items-center mb-3 pt-3">
@@ -67,7 +72,8 @@
                                 <a href="masInfo.html" class="nav-link d-block py-2">Más información</a>
                             </div>
                             <div class="col-12 col-md-3 p-0 cuadrosEnlaceMenu">
-                                <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="nav-link d-block py-2">Más ayuda</a>
+                                <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="nav-link d-block py-2">Más
+                                    ayuda</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +84,306 @@
         <a href="#" class="fondoOscuro d-md-none" id="fondoEnlace"></a>
 
         <section class="container mt-5">
+
+            <!-- 1) Tarjetas trámites -->
+            <div class="mb-5">
+                <h3 class="pb-2">Tramites y requisitos</h3>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-4">
+                        <article class="flipCard">
+                            <div class="flipCardInner">
+                                <!-- Front -->
+                                <div class="flipCardFace flipCardFront card ">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="tramiteIcon mb-3">
+                                            <i class="icon-id-card"></i>
+                                        </div>
+
+                                        <h3 class="h5 card-title mb-2">Acerca de la renovación de su DNI</h3>
+                                        <p class="card-text text-muted small mb-4">
+                                            Requisitos habituales para renovar por caducidad o próximas fechas.
+                                        </p>
+
+                                        <button class="btn btn-primary mt-auto btnFlip" type="button">
+                                            Ver requisitos
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Back -->
+                                <div class="flipCardFace flipCardBack card ">
+                                    <div class="card-body d-flex flex-column">
+                                        <h3 class="h5 card-title mb-3">Renovación: qué llevar</h3>
+
+                                        <ul class="mb-4 small">
+                                            <li>DNI anterior.</li>
+                                            <li>Fotografía reciente (si procede).</li>
+                                            <li>Pago de la tasa (si aplica).</li>
+                                            <li>Documentación adicional si hay cambios (domicilio/datos).</li>
+                                        </ul>
+
+                                        <button class="btn btn-outline-primary mt-auto btnFlipBack" type="button">
+                                            Volver
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-4">
+                        <article class="flipCard">
+                            <div class="flipCardInner">
+                                <div class="flipCardFace flipCardFront card ">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="tramiteIcon mb-3">
+                                            <i class="icon-doc-text"></i>
+                                        </div>
+
+                                        <h3 class="h5 card-title mb-2">Primera expedición / nuevo DNI</h3>
+                                        <p class="card-text text-muted small mb-4">
+                                            Documentación orientativa para primera expedición.
+                                        </p>
+
+                                        <button class="btn btn-primary mt-auto btnFlip" type="button">
+                                            Ver requisitos
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="flipCardFace flipCardBack card ">
+                                    <div class="card-body d-flex flex-column">
+                                        <h3 class="h5 card-title mb-3">Primera expedición</h3>
+                                        <ul class="mb-4 small">
+                                            <li>Documentación acreditativa (según el caso).</li>
+                                            <li>Fotografía reciente (si procede).</li>
+                                            <li>Pago de la tasa (si aplica).</li>
+                                        </ul>
+
+                                        <button class="btn btn-outline-primary mt-auto btnFlipBack" type="button">
+                                            Volver
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-4">
+                        <article class="flipCard">
+                            <div class="flipCardInner">
+                                <div class="flipCardFace flipCardFront card ">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="tramiteIcon mb-3">
+                                            <i class="icon-calendar"></i>
+                                        </div>
+
+                                        <h3 class="h5 card-title mb-2">Pérdida, robo o deterioro</h3>
+                                        <p class="card-text text-muted small mb-4">
+                                            Qué suele pedirse en estos casos.
+                                        </p>
+
+                                        <button class="btn btn-primary mt-auto btnFlip" type="button">
+                                            Ver requisitos
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="flipCardFace flipCardBack card ">
+                                    <div class="card-body d-flex flex-column">
+                                        <h3 class="h5 card-title mb-3">Robo / pérdida / deterioro</h3>
+                                        <ul class="mb-4 small">
+                                            <li>Documentación de apoyo (si procede).</li>
+                                            <li>Fotografía reciente (si procede).</li>
+                                            <li>Pago de la tasa (según corresponda).</li>
+                                        </ul>
+
+                                        <button class="btn btn-outline-primary mt-auto btnFlipBack" type="button">
+                                            Volver
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acordeón FAQ (Always open: SIN data-bs-parent) -->
+            <div class="mb-5">
+                <h3 class="pb-2">Preguntas frecuentes</h3>
+                <div class="accordion" id="faqAccordion">
+                    <!-- 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1h">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                ¿Cuándo puedo renovar el DNI?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1h">
+                            <div class="accordion-body">
+                                Puedes renovar cuando esté próximo a caducar o en los supuestos habituales (caducidad,
+                                deterioro o cambios de datos).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2h">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                ¿Qué documentación necesito para la renovación?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2h">
+                            <div class="accordion-body">
+                                Normalmente: DNI anterior, documentación adicional si hay cambios (domicilio/datos), y
+                                pago de la tasa si aplica.
+                                En algunos casos puede requerirse fotografía reciente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3h">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                ¿Necesito foto siempre?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3h">
+                            <div class="accordion-body">
+                                Depende del trámite y de la validez de la imagen existente. En algunos casos se exige
+                                foto reciente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4h">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                ¿Qué hago si he perdido el DNI o me lo han robado?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4h">
+                            <div class="accordion-body">
+                                Se tramita una nueva expedición por pérdida/robo. Aporta la documentación requerida para
+                                acreditar identidad
+                                y realiza el pago de la tasa si corresponde.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq5h">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                ¿Puedo renovar el DNI si he cambiado de domicilio o datos personales?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5h">
+                            <div class="accordion-body">
+                                Sí, pero tendrás que aportar la documentación que acredite el cambio (según el dato que
+                                hayas modificado).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq6h">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                ¿Cuánto tarda el trámite en la oficina?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6h">
+                            <div class="accordion-body">
+                                Depende de la oficina y la afluencia. Normalmente el trámite se realiza en el momento si
+                                la documentación está correcta.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq7h">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                ¿Qué ocurre si mi DNI está caducado?
+                            </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7h">
+                            <div class="accordion-body">
+                                Debes renovarlo cuanto antes solicitando cita. Si lo necesitas para gestiones urgentes,
+                                revisa los requisitos del trámite y acude con toda la documentación.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 3) Oficinas -->
+            <div class="mb-5">
+                <h3 class="pb-2">Oficinas</h3>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100  oficinaCard">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Oficina Centro</h3>
+                                <p class="mb-2"><i class="icon-location me-2"></i><strong>Dirección:</strong> Calle
+                                    Ejemplo 123, Madrid</p>
+                                <p class="mb-2"><i class="icon-calendar me-2"></i><strong>Horario:</strong> L–V
+                                    09:00–14:00</p>
+                                <p class="mb-0"><i class="icon-phone me-2"></i><strong>Teléfono:</strong> 900 000 000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100  oficinaCard">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Oficina Centro</h3>
+                                <p class="mb-2"><i class="icon-location me-2"></i><strong>Dirección:</strong> Calle
+                                    Ejemplo 123, Madrid</p>
+                                <p class="mb-2"><i class="icon-calendar me-2"></i><strong>Horario:</strong> L–V
+                                    09:00–14:00</p>
+                                <p class="mb-0"><i class="icon-phone me-2"></i><strong>Teléfono:</strong> 900 000 000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100  oficinaCard">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Oficina Centro</h3>
+                                <p class="mb-2"><i class="icon-location me-2"></i><strong>Dirección:</strong> Calle
+                                    Ejemplo 123, Madrid</p>
+                                <p class="mb-2"><i class="icon-calendar me-2"></i><strong>Horario:</strong> L–V
+                                    09:00–14:00</p>
+                                <p class="mb-0"><i class="icon-phone me-2"></i><strong>Teléfono:</strong> 900 000 000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
+
     </main>
 
     <footer class="bg-dark text-white pt-4 pb-2 mt-5">
