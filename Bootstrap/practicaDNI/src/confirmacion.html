@@ -15,13 +15,13 @@
 
 <body class="d-flex flex-column min-vh-100">
     <div id="barraLateralIzquierda" class="barra-lateral d-md-none">
-    <nav class="d-flex flex-column p-3">
-        <a href="../index.html" class="py-2 border-bottom">Inicio</a>
-        <a href="citaPrevia.html" class="py-2 border-bottom">Pedir Cita</a>
-        <a href="masInfo.html" class="py-2 border-bottom">Más información</a>
-        <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="py-2">Más ayuda</a>
-    </nav>
-</div>
+        <nav class="d-flex flex-column p-3">
+            <a href="../index.html" class="py-2 border-bottom enlaces">Inicio</a>
+            <a href="citaPrevia.html" class="py-2 border-bottom enlaces">Pedir Cita</a>
+            <a href="masInfo.html" class="py-2 border-bottom enlaces">Más información</a>
+            <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="py-2 enlaces">Más ayuda</a>
+        </nav>
+    </div>
     <main class="flex-grow-1">
         <header class="container-fluid p-0">
             <div class="row m-0 d-flex justify-content-center align-items-center mb-3 pt-3">
@@ -67,7 +67,8 @@
                                 <a href="masInfo.html" class="nav-link d-block py-2">Más información</a>
                             </div>
                             <div class="col-12 col-md-3 p-0 cuadrosEnlaceMenu">
-                                <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="nav-link d-block py-2">Más ayuda</a>
+                                <a href="../docs/43CITAPREVIAnivelinternet.pdf" class="nav-link d-block py-2">Más
+                                    ayuda</a>
                             </div>
                         </div>
                     </div>
@@ -78,6 +79,72 @@
         <a href="#" class="fondoOscuro d-md-none" id="fondoEnlace"></a>
 
         <section class="container mt-5">
+            <div class="alert alert-primary d-flex align-items-center gap-2" role="alert">
+                <i class="icon-info-circled"></i>
+                <div>
+                    En su correo electrónico debe de haber debe de haber recibido un email confirmando la cita que ha
+                    solicitado.
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h2 class="h5 mb-0">Los datos de su cita son</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <dl class="row mb-0">
+                                <dt class="col-5 col-sm-4">Documento:</dt>
+                                <dd class="col-7 col-sm-8">DNI</dd>
+
+                                <dt class="col-5 col-sm-4">Equipo:</dt>
+                                <dd class="col-7 col-sm-8">
+                                    U.D. DE SALAMANCA (EJEMPLO)<br>
+                                    C/ RECTOR LUCENA, 12 (SALAMANCA)
+                                </dd>
+
+                                <dt class="col-5 col-sm-4">Fecha:</dt>
+                                <dd class="col-7 col-sm-8">Lunes, 18 de Febrero de 2026</dd>
+
+                                <dt class="col-5 col-sm-4">Hora:</dt>
+                                <dd class="col-7 col-sm-8">10:30</dd>
+
+                                <dt class="col-5 col-sm-4">Datos del Trámite:</dt>
+                                <dd class="col-7 col-sm-8">DNI (Individual)</dd>
+
+                                <dt class="col-5 col-sm-4">Nº de Expediciones:</dt>
+                                <dd class="col-7 col-sm-8">1</dd>
+
+                                <dt class="col-5 col-sm-4">Número de cita:</dt>
+                                <dd class="col-7 col-sm-8">A-2026-018736</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-lg-8">
+                    <div class="card shadow-sm">
+                        <div
+                            class="card-body d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3">
+                            <div>
+                                <h3 class="h6 mb-1 textoAzul">¿Necesita más ayuda?</h3>
+                                <p class="mb-0 small text-muted">
+                                    Visite el apartado de “Más información” para requisitos, trámites y preguntas
+                                    frecuentes.
+                                </p>
+                            </div>
+
+                            <a class="btn btn-outline-primary" href="masInfo.html">
+                                Ir a Más información
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
