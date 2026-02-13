@@ -232,6 +232,12 @@ a {
     border-color: none !important;
     color:  var(--botonTexto) !important;
 }
+.enlaceBloqueado{
+  pointer-events: none;
+  opacity: 0.55;
+  filter: grayscale(25%);
+  cursor: not-allowed;
+}
 @media (max-width: 767.98px) {
   #navPolicia {
     display: none !important;
