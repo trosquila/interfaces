@@ -73,7 +73,7 @@
         </header>
         <a href="#" class="fondoOscuro d-md-none" id="fondoEnlace"></a>
         <section class="container mt-5">
-            <form class="row g-4 needs-validation">
+            <form class="row g-4" novalidate>
                 <div class="col-12">
                     <h5 class="border-bottom pb-2"><i class="icon-doc-text"></i> 1. Selección de Trámite</h5>
                     <div class="form-floating">
@@ -92,9 +92,9 @@
                     <div class="form-floating">
                         <select class="form-select" id="provincia" required>
                             <option selected disabled value="">Seleccione Provincia...</option>
-                            <option>Madrid</option>
-                            <option>Barcelona</option>
-                            <option>Valencia</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Springfield">Springfield</option>
                         </select>
                         <label for="provincia">Provincia</label>
                     </div>
