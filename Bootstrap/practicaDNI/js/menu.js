@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
     /* Guardamos los elementos HTML para luego trabajar con ellos */
     const boton = document.getElementById('btnMenuMovil');
@@ -24,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    //PARA GIRAR LAS CARTAS DE MÁS INFO
     document.querySelectorAll(".btnFlip").forEach((btn) => {
         btn.addEventListener("click", () => {
+            //busca elementos por encima de el con esa clase
             const flipCard = btn.closest(".flipCard");
             if (flipCard) flipCard.classList.add("isFlipped");
         });
@@ -38,5 +42,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-
