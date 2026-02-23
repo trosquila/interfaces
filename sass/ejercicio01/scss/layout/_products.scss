@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as v;
+
+// Ejemplo de Loop @each para las tarjetas de producto
+// Esto genera clases para que cada producto tenga un borde de un color de tu paleta
+@each $name, $value in v.$colors {
+    .product--#{$name} {
+        border: 2px solid $value;
+    }
+}

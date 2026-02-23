@@ -1,0 +1,19 @@
+@mixin flexCenter($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "md" {
+        @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == "lg" {
+        @media (max-width: 1200px) { @content; }
+    }
+}
+
+@mixin flex-center-text {
+    flex: 1;
+    text-align: center;
+}

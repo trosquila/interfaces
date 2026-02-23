@@ -1,3 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Arial";
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  display: grid;
+  padding-top: 20px;
+  background-color: #ffd7e1;
+}
+header .subcaberezaSuperior {
+  display: grid;
+  grid-template-columns: 0.25fr 1.75fr;
+  width: 60%;
+  margin: auto;
+}
+header .subcaberezaSuperior .subMenuSuperior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .subcaberezaSuperior .subMenuSuperior div {
+  flex: 1;
+  text-align: center;
+}
+header .subCabeceraInferior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+header .subCabeceraInferior h2 {
+  margin: 20px 0;
+}
+header .subCabeceraInferior .subMenuIferior {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .subCabeceraInferior .subMenuIferior div {
+  flex: 1;
+  text-align: center;
+}
+
+.product--primary {
+  border: 2px solid #FD0C3F;
+}
+
+.product--secondary {
+  border: 2px solid #0CFDCA;
+}
+
+.product--accent {
+  border: 2px solid #F07F97;
+}
+
+.product--cabecera {
+  border: 2px solid #ffd7e1;
+}
+
+.product--background {
+  border: 2px solid #ffffff;
+}
+
+.product--optional {
+  border: 2px solid #F7DEE4;
+}
 
 /*# sourceMappingURL=main.css.map */

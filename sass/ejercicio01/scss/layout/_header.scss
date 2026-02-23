@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+header{
+    width: 100%;
+    display: grid;
+    padding-top: 20px;
+    background-color: map-get(v.$colors, "cabecera");
+    .subcaberezaSuperior{
+        display: grid;
+        grid-template-columns: 0.25fr 1.75fr;
+        width: 60%;
+        margin: auto;
+
+        .subMenuSuperior{
+            @include m.flexCenter(row, space-between, center);
+            div{
+                @include m.flex-center-text;
+            }
+        }
+    }
+    .subCabeceraInferior{
+        @include m.flexCenter(row, space-between, center);
+        flex-direction: column;
+        h2{
+            margin: 20px 0;
+        }
+        .subMenuIferior{
+            width: 80%;
+            @include m.flexCenter(row, space-between, center);
+            div{
+                @include m.flex-center-text;
+            }
+        }
+    }
+}

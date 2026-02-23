@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: v.$font-main; 
+    background-color: map-get(v.$colors, "background");
+    font-size: 16px;
+    line-height: 1.6;
+}

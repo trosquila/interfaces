@@ -3,8 +3,9 @@ $colors: (
     "primary":    #FD0C3F,
     "secondary":  #0CFDCA, 
     "accent":     #F07F97, 
-    "soft":       #F0B2BF,
-    "background": #F7DEE4
+    "cabecera":   #ffd7e1,
+    "background": #ffffff,
+    "optional": #F7DEE4
 );
 
 $font-sizes: (
@@ -14,4 +15,4 @@ $font-sizes: (
     "xl": 3rem
 );
 
-$font-main: 'Sedgwick Ave', cursive;
+$font-main: 'Arial';
