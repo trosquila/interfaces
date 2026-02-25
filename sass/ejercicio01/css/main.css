@@ -15,7 +15,7 @@ header {
   width: 100%;
   display: grid;
   padding-top: 20px;
-  background-color: #ffd7e1;
+  background-color: #9e9e9e;
 }
 header .subcaberezaSuperior {
   display: grid;
@@ -55,6 +55,55 @@ header .subCabeceraInferior .subMenuIferior div {
   text-align: center;
 }
 
+.slideshow {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slideshow__container {
+  display: flex;
+  width: 400%;
+  height: 500px;
+  animation: slide-animation 15s infinite ease-in-out;
+}
+.slideshow__item {
+  width: 100%;
+}
+.slideshow__item img {
+  width: 100%;
+  height: 165%;
+  object-fit: cover;
+}
+
+@keyframes slide-animation {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  45% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  70% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  95% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .product--primary {
   border: 2px solid #FD0C3F;
 }
@@ -68,7 +117,7 @@ header .subCabeceraInferior .subMenuIferior div {
 }
 
 .product--cabecera {
-  border: 2px solid #ffd7e1;
+  border: 2px solid #9e9e9e;
 }
 
 .product--background {
