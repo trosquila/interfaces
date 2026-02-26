@@ -1,9 +1,28 @@
 @use "../abstracts/variables" as v;
 
-// Ejemplo de Loop @each para las tarjetas de producto
-// Esto genera clases para que cada producto tenga un borde de un color de tu paleta
-@each $name, $value in v.$colors {
-    .product--#{$name} {
-        border: 2px solid $value;
+.contenedorProductos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+
+    .contenedorTarjetas{
+        display: grid;
+        gap: 20px;
+        width: 70%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        .tarjeta{
+            padding-top: 20px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: rgb(240, 240, 240);
+            img{
+                width: 300px;
+                height: 427px;
+                border-radius: 10px;
+            }
+        }
+        
     }
 }

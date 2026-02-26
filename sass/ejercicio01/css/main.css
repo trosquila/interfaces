@@ -104,28 +104,29 @@ header .subCabeceraInferior .subMenuIferior div {
     transform: translateX(0);
   }
 }
-.product--primary {
-  border: 2px solid #FD0C3F;
+.contenedorProductos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
 }
-
-.product--secondary {
-  border: 2px solid #0CFDCA;
+.contenedorProductos .contenedorTarjetas {
+  display: grid;
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-.product--accent {
-  border: 2px solid #F07F97;
+.contenedorProductos .contenedorTarjetas .tarjeta {
+  padding-top: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
 }
-
-.product--cabecera {
-  border: 2px solid #9e9e9e;
-}
-
-.product--background {
-  border: 2px solid #ffffff;
-}
-
-.product--optional {
-  border: 2px solid #F7DEE4;
+.contenedorProductos .contenedorTarjetas .tarjeta img {
+  width: 300px;
+  height: 427px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
