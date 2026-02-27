@@ -43,8 +43,6 @@
                 border-radius: 10px;
             }
             @include m.respond-to("md") {
-
-                width: 70%;
                 margin: auto;
             }
             @include m.respond-to("sm") {
