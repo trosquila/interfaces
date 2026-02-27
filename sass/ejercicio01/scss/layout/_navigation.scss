@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.subcaberezaSuperior{
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr;
+    width: 60%;
+    margin: auto;
+    img{
+        width: 100px;
+    }
+    .subMenuSuperior{
+        @include m.flexCenter(row, space-between, center);
+        div{
+            @include m.flex-center-text;
+        }
+    }
+}

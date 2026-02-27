@@ -1,28 +1,60 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m; // Importante importar los mixins
 
-.contenedorProductos{
+.contenedorProductos {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 60px;
 
-    .contenedorTarjetas{
+    .contenedorTarjetas {
         display: grid;
         gap: 20px;
         width: 70%;
         margin: auto;
         grid-template-columns: repeat(3, 1fr);
-        .tarjeta{
+
+        @include m.respond-to("md") {
+            width: 90%; 
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include m.respond-to("sm") {
+            width: 95%;
+            grid-template-columns: 1fr;
+        }
+
+        .tarjeta {
             padding-top: 20px;
-            border: 1px solid grey;
             border-radius: 10px;
             background-color: rgb(240, 240, 240);
-            img{
-                width: 300px;
-                height: 427px;
+            
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.2}s;
+            }
+    }
+            img {
+                width: 100%;
+                max-width: 300px;
+                height: 392px;
                 border-radius: 10px;
             }
+            @include m.respond-to("md") {
+
+                width: 70%;
+                margin: auto;
+            }
+            @include m.respond-to("sm") {
+                width: 350px;
+                padding: 0;
+                padding: 10px; 
+            }
         }
-        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
     }
 }

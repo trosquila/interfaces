@@ -7,9 +7,9 @@
 
 @mixin respond-to($breakpoint) {
     @if $breakpoint == "md" {
-        @media (max-width: 768px) { @content; }
-    } @else if $breakpoint == "lg" {
-        @media (max-width: 1200px) { @content; }
+        @media (max-width: 1280px) { @content; }
+    } @else if $breakpoint == "sm" {
+        @media (max-width: 876px) { @content; }
     }
 }
 

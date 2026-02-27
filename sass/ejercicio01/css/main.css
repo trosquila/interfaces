@@ -17,22 +17,6 @@ header {
   padding-top: 20px;
   background-color: #9e9e9e;
 }
-header .subcaberezaSuperior {
-  display: grid;
-  grid-template-columns: 0.25fr 1.75fr;
-  width: 60%;
-  margin: auto;
-}
-header .subcaberezaSuperior .subMenuSuperior {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-header .subcaberezaSuperior .subMenuSuperior div {
-  flex: 1;
-  text-align: center;
-}
 header .subCabeceraInferior {
   display: flex;
   flex-direction: row;
@@ -51,6 +35,26 @@ header .subCabeceraInferior .subMenuIferior {
   align-items: center;
 }
 header .subCabeceraInferior .subMenuIferior div {
+  flex: 1;
+  text-align: center;
+}
+
+.subcaberezaSuperior {
+  display: grid;
+  grid-template-columns: 0.25fr 1.75fr;
+  width: 60%;
+  margin: auto;
+}
+.subcaberezaSuperior img {
+  width: 100px;
+}
+.subcaberezaSuperior .subMenuSuperior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.subcaberezaSuperior .subMenuSuperior div {
   flex: 1;
   text-align: center;
 }
@@ -117,16 +121,66 @@ header .subCabeceraInferior .subMenuIferior div {
   margin: auto;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 1280px) {
+  .contenedorProductos .contenedorTarjetas {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 876px) {
+  .contenedorProductos .contenedorTarjetas {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+}
 .contenedorProductos .contenedorTarjetas .tarjeta {
   padding-top: 20px;
-  border: 1px solid grey;
   border-radius: 10px;
   background-color: rgb(240, 240, 240);
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+.contenedorProductos .contenedorTarjetas .tarjeta:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.contenedorProductos .contenedorTarjetas .tarjeta:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.contenedorProductos .contenedorTarjetas .tarjeta:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.contenedorProductos .contenedorTarjetas .tarjeta:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.contenedorProductos .contenedorTarjetas .tarjeta:nth-child(5) {
+  animation-delay: 1s;
+}
+.contenedorProductos .contenedorTarjetas .tarjeta:nth-child(6) {
+  animation-delay: 1.2s;
 }
 .contenedorProductos .contenedorTarjetas .tarjeta img {
-  width: 300px;
-  height: 427px;
+  width: 100%;
+  max-width: 300px;
+  height: 392px;
   border-radius: 10px;
+}
+@media (max-width: 1280px) {
+  .contenedorProductos .contenedorTarjetas .tarjeta {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 876px) {
+  .contenedorProductos .contenedorTarjetas .tarjeta {
+    width: 350px;
+    padding: 0;
+    padding: 10px;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
