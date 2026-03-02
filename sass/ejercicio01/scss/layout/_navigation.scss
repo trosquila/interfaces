@@ -7,15 +7,18 @@
     width: 60%;
     margin: auto;
 
-    img {
-        width: 100px;
-    }
-
     .subMenuSuperior {
         @include m.flexCenter(row, space-between, center);
 
         div {
             @include m.flex-center-text;
+            flex: 1 1 50%;
+            padding: 8px 15px;
+        }
+
+        div:hover{
+            background-color: rgba(0,0,0,0.05);
+            color: map-get(v.$colors, "primary");
         }
     }
 
@@ -27,21 +30,13 @@
         width: 95%;
         grid-template-columns: 0.4fr 1.6fr;
 
-        img {
-            width: 80px;
-        }
+
     }
 
     @include m.respond-to("sm") {
         grid-template-columns: 1fr;
         width: 100%;
         padding: 0 15px;
-
-        img {
-            width: 70px;
-            margin: 0 auto;
-            display: block;
-        }
 
         .subMenuSuperior {
             flex-wrap: wrap;

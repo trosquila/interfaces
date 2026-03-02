@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.imgLogo {
+    width: 100px;
+    transition: width 0.3s ease; // Opcional: para que el cambio de tamaño sea suave
+
+    @include m.respond-to("md") {
+        width: 80px;
+    }
+
+    @include m.respond-to("sm") {
+        width: 70px;
+        margin: 0 auto;
+        display: block;
+    }
+}

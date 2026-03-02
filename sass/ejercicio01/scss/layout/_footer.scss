@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as v;
+
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: map-get(v.$colors, "cabecera");
+    text-align: center;
+
+    p{
+        text-align: left;
+    }
+    .redesSociales {
+        grid-column: 1/4;
+    }
+
+    .contenidoPie {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form{
+        input{
+            height: 30px;
+            width: 60%;
+            margin: 5px;
+        }
+        div{
+            display: flex;
+        }
+    }
+}

@@ -15,7 +15,7 @@ header {
   width: 100%;
   display: grid;
   padding-top: 20px;
-  background-color: #9e9e9e;
+  background-color: #bdbdbd;
 }
 header .subCabeceraInferior h2 {
   margin: 20px 0;
@@ -27,10 +27,16 @@ header .subCabeceraInferior .subMenuIferior {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 header .subCabeceraInferior .subMenuIferior div {
   flex: 1;
   text-align: center;
+  margin: auto;
+  padding: 8px 15px;
+}
+header .subCabeceraInferior .subMenuIferior div:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 760px) {
   header .subCabeceraInferior {
@@ -65,9 +71,6 @@ header .subCabeceraInferior .subMenuIferior div {
   width: 60%;
   margin: auto;
 }
-.subcaberezaSuperior img {
-  width: 100px;
-}
 .subcaberezaSuperior .subMenuSuperior {
   display: flex;
   flex-direction: row;
@@ -77,6 +80,11 @@ header .subCabeceraInferior .subMenuIferior div {
 .subcaberezaSuperior .subMenuSuperior div {
   flex: 1;
   text-align: center;
+  flex: 1 1 50%;
+  padding: 8px 15px;
+}
+.subcaberezaSuperior .subMenuSuperior div:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 1000px) {
   .subcaberezaSuperior {
@@ -88,20 +96,12 @@ header .subCabeceraInferior .subMenuIferior div {
     width: 95%;
     grid-template-columns: 0.4fr 1.6fr;
   }
-  .subcaberezaSuperior img {
-    width: 80px;
-  }
 }
 @media (max-width: 560px) {
   .subcaberezaSuperior {
     grid-template-columns: 1fr;
     width: 100%;
     padding: 0 15px;
-  }
-  .subcaberezaSuperior img {
-    width: 70px;
-    margin: 0 auto;
-    display: block;
   }
   .subcaberezaSuperior .subMenuSuperior {
     flex-wrap: wrap;
@@ -257,6 +257,58 @@ header .subCabeceraInferior .subMenuIferior div {
   }
 }
 
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #bdbdbd;
+  text-align: center;
+}
+footer p {
+  text-align: left;
+}
+footer .redesSociales {
+  grid-column: 1/4;
+}
+footer .contenidoPie {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer form input {
+  height: 30px;
+  width: 60%;
+  margin: 5px;
+}
+footer form div {
+  display: flex;
+}
+
+.imgLogo {
+  width: 100px;
+  transition: width 0.3s ease;
+}
+@media (max-width: 760px) {
+  .imgLogo {
+    width: 80px;
+  }
+}
+@media (max-width: 560px) {
+  .imgLogo {
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+header h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 38pt;
+}
+header p {
+  font-size: 14pt;
+}
+
 .dropdown {
   position: relative;
   cursor: pointer;
@@ -267,8 +319,8 @@ header .subCabeceraInferior .subMenuIferior div {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #9e9e9e;
-  min-width: 150px;
+  background-color: #bdbdbd;
+  width: 100%;
   list-style: none;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 100;

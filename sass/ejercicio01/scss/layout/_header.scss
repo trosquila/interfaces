@@ -8,7 +8,6 @@ header {
     background-color: map-get(v.$colors, "cabecera");
 
     .subCabeceraInferior {
-
         h2 {
             margin: 20px 0;
             text-align: center;
@@ -17,9 +16,15 @@ header {
         .subMenuIferior {
             width: 80%;
             @include m.flexCenter(row, space-between, center);
-
+            margin: auto;
             div {
                 @include m.flex-center-text;
+                margin: auto;
+                padding: 8px 15px;
+            }
+            div:hover{
+                background-color: rgba(0,0,0,0.05);
+                color: map-get(v.$colors, "primary");
             }
         }
 
