@@ -8,10 +8,10 @@ header {
     background-color: map-get(v.$colors, "cabecera");
 
     .subCabeceraInferior {
-        @include m.flexCenter(row, space-between, center);
 
         h2 {
             margin: 20px 0;
+            text-align: center;
         }
 
         .subMenuIferior {
@@ -23,7 +23,6 @@ header {
             }
         }
 
-        // Responsividad
         @include m.respond-to("md") {
             flex-direction: column;
 

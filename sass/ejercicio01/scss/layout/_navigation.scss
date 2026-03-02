@@ -19,7 +19,6 @@
         }
     }
 
-    // Responsividad
     @include m.respond-to("lg") {
         width: 80%;
     }

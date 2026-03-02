@@ -2,14 +2,12 @@
 $colors: (
     "cabecera":   #9e9e9e,
     "background": #ffffff,
+    "tarjetaGris": rgb(240, 240, 240),
+    "contenidoHoverTarjeta":rgba(131, 131, 131, 0.582),
+    "blanco": white
 );
 
-$font-sizes: (
-    "sm": 0.8rem,
-    "md": 1rem,
-    "lg": 1.5rem,
-    "xl": 3rem
-);
+
 
 $breakpoints: (
     "xl": 1200px,

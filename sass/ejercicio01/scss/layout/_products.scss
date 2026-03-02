@@ -15,7 +15,7 @@
         grid-template-columns: repeat(3, 1fr);
 
         @include m.respond-to("md") {
-            width: 90%; 
+            width: 90%;
             grid-template-columns: repeat(2, 1fr);
         }
 
@@ -25,34 +25,59 @@
         }
 
         .tarjeta {
+            position: relative; 
             padding-top: 20px;
             border-radius: 10px;
-            background-color: rgb(240, 240, 240);
-            
+            background-color: map-get(v.$colors, "tarjetaGris");
+            overflow: hidden;
+
             opacity: 0;
             animation: fadeIn 0.5s forwards;
+
             @for $i from 1 through 6 {
                 &:nth-child(#{$i}) {
-                animation-delay: #{$i * 0.2}s;
+                    animation-delay: #{$i * 0.2}s;
+                }
             }
-    }
+            &__masInfoManga {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                background-color: map-get(v.$colors, "contenidoHoverTarjeta");
+                color: map-get(v.$colors, "blanco");
+                padding: 15px;
+                width: 80%;
+                border-radius: 5px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            &:hover {
+                .tarjeta__masInfoManga {
+                    display: block !important;
+                }
+
+                img {
+                    filter: blur(2px) brightness(0.7);
+                }
+            }
+
             img {
                 width: 100%;
                 max-width: 300px;
                 height: 392px;
                 border-radius: 10px;
-            }
-            @include m.respond-to("md") {
-                margin: auto;
-            }
-            @include m.respond-to("sm") {
-                width: 350px;
-                padding: 0;
-                padding: 10px; 
+                transition: 0.3s;
             }
         }
+
         @keyframes fadeIn {
-            to { opacity: 1; }
+            to {
+                opacity: 1;
+            }
         }
     }
 }
