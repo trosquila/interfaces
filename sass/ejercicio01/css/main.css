@@ -295,4 +295,28 @@ header .subCabeceraInferior .subMenuIferior div {
   }
 }
 
+.btn-agregar {
+  background-color: #ffffff;
+  color: #ff4757;
+  border: 1px solid #ff4757;
+  padding: 10px 18px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.btn-agregar:hover {
+  background-color: #ff4757;
+  color: #ffffff;
+}
+
+.btn-agregar:active {
+  background-color: #e84118;
+  border-color: #e84118;
+  transform: scale(0.95);
+  transition: all 0.1s ease;
+}
+
 /*# sourceMappingURL=main.css.map */
