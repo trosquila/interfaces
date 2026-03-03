@@ -1,33 +1,76 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 footer {
     margin-top: 50px;
+    padding: 40px 10% 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     background-color: map-get(v.$colors, "cabecera");
     text-align: center;
 
-    p{
-        text-align: left;
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        margin-bottom: 8px;
+        &:hover { color: map-get(v.$colors, "primary"); }
     }
-    .redesSociales {
-        grid-column: 1/4;
-    }
+
+    p { text-align: center; }
 
     .contenidoPie {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
-    form{
-        input{
-            height: 30px;
-            width: 60%;
+    form {
+        width: 100%;
+        input {
+            height: 35px;
+            width: 100%;
             margin: 5px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
         }
-        div{
+        div {
             display: flex;
+            justify-content: center;
+        }
+    }
+
+    .redesSociales {
+        grid-column: 1 / 4;
+        padding-top: 20px;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        font-size: 24pt;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .icon-twitter { color: #1DA1F2; }
+        .icon-youtube-play { color: #FF0000; }
+        .icon-facebook-rect { color: #4267B2; }
+        .icon-instagram { color: #E1306C; }
+        .icon-linkedin { color: #0077B5; }
+    }
+
+    @include m.respond-to("md") {
+        grid-template-columns: 1fr 1fr;
+        .redesSociales { grid-column: 1 / 3; }
+        .contenidoPie:nth-child(3) { grid-column: 1 / 3; }
+    }
+
+    @include m.respond-to("sm") {
+        grid-template-columns: 1fr;
+        .redesSociales { grid-column: 1 / 2; }
+        .contenidoPie, .redesSociales { grid-column: 1 / 2; }
+        
+        form div {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
